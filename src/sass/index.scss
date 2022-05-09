@@ -1,0 +1,73 @@
+@import "variables.scss";
+@import "fond-size-variables.scss";
+// @import "mixins.scss";
+@import "fonts.scss";
+@import "cdn.scss";
+@import "header.scss";
+@import "card-features.scss";
+@import "works.scss";
+@import "team.scss";
+@import "testimonials.scss";
+@import "download.scss";
+@import "footer.scss";
+
+
+// @import "test.scss";
+
+* {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+  z-index:2;
+
+  @media (width: 1024px){
+    max-width: 985px;
+ padding: 0 15px;
+}
+ @media(width:320px){
+   
+ }
+
+
+
+}
+
+.wrap {
+  display:flex;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 115 -15px;
+  
+  @media (width: 1024px){
+     
+    margin: 78px -15px;
+  }
+    @media (width: 320px){
+         
+          flex-direction: column;
+          margin: 35px 0;
+    }
+ 
+}
+
+
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+

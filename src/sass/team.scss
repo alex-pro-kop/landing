@@ -1,0 +1,117 @@
+.team {
+    width:100%;
+
+}
+
+.card-team {
+
+    width: 270px;
+    padding: 20px; 
+    margin: 0 10px 50px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+
+
+    @media (width:1024px){
+        width: 270px;
+        margin: 0 5px;
+
+    }
+
+    
+
+    @media (width:320px){
+        width: 280px;
+        margin: 20px;
+        
+        
+    }
+
+    &:hover {
+        transform: scale(1.02);
+      }
+
+    &-img {
+   
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto 20px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        overflow: hidden;
+            &-img {
+            
+                height:100%
+            }
+
+        @media (width:1024px){ 
+            
+            height: 227px;    
+            margin: 20px 0;
+            
+            img{
+                width: 245px;
+                height: 227px;
+            }    
+        }
+
+        @media (width:320px){
+            width: 280px;
+            height: 227px;
+             margin: 0 auto 10px;
+                img{
+                height: 280px;
+                width: 227px;
+                }
+        }
+    }
+}
+.card-team-name {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+        font-family: 'Raleway';
+        font-weight:$Bolt700;
+        line-height: 28px;
+        color: $text;
+    }
+
+    .card-team-prof {
+        margin-bottom: 15px;
+        font-size: $_13px;
+        color: $red-normal;
+        text-transform: uppercase;
+    }
+
+    .card-team-text {
+        margin-bottom: 20px;
+        font-size: $_13px;
+        line-height: 1.5;
+        color: #6c7279;
+    }
+
+
+    .social {
+    display: flex;
+    }
+
+    .social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 4px;
+        background-color: #fff;
+        border: 1px solid $icon;
+        &:hover {
+            background-color: blue;
+        }
+    }
+
+
+.fa-brands {
+    color:$icon;
+}
